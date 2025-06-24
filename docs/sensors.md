@@ -5,7 +5,7 @@ Below is a standard and extensible schema that you can adapt:
 ### ✅ **Suggested Fields in IoT Device Data**
 
 | Field Name          | Type                | Description                                                                       |
-| ------------------- | ------------------- | --------------------------------------------------------------------------------- |
+|---------------------|---------------------|-----------------------------------------------------------------------------------|
 | `device_id`         | `string`            | Unique identifier for the device                                                  |
 | `sensor_name`       | `string`            | Descriptive name of the sensor (e.g., `"motion_sensor"`, `"thermostat"`)          |
 | `sensor_type`       | `string`            | Type/category of sensor (e.g., `"temperature"`, `"motion"`, `"camera"`)           |
@@ -29,3 +29,4 @@ For your model to classify data as **sensitive** or **non-sensitive**, the most 
 * `location`
 
 These can be used either directly or transformed (e.g., using one-hot encoding or embeddings) to feed into the classifier.
+    
