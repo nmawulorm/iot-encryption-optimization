@@ -1,0 +1,201 @@
+device_id,sensor_name,sensor_type,device_type,location,timestamp,value,unit,status,sensitivity_label
+956d1fb0-4386-470d-96d7-bbf5f34808e1,humidity_sensor,environmental,environmental_device,Data Center,2025-06-20T08:22:45.902502,ON,bpm,active,Non-sensitive
+4424096e-1db2-45a6-99f9-3478d4df69bc,patient_monitor,biometric,biometric_device,ICU,2025-06-22T18:05:45.902574,ON,°C,offline,Sensitive
+8a5c914c-0ab6-4be8-bea9-9ea8f146e39b,ECG_sensor,biometric,biometric_device,ER,2025-06-24T02:20:45.902604,ON,kWh,active,Sensitive
+f98536b9-98e8-49a2-be53-8ad512077e12,humidity_sensor,environmental,environmental_device,Data Center,2025-06-19T10:16:45.902624,OFF,bpm,active,Non-sensitive
+4b9d89d1-cfbc-4f18-8742-b2c6da259b18,biometric_access_reader,biometric,biometric_device,Entrance,2025-06-19T16:51:45.902654,OFF,bpm,idle,Sensitive
+e5ab7428-282d-4e45-b45c-f2eacb6e3de4,door_sensor,access_control,access_control_device,Operating Room,2025-06-19T13:38:45.902692,OFF,bpm,active,Sensitive
+76d41a3c-1c17-4e6c-af70-47133d8be1a5,atm_camera,video,video_device,ATM,2025-06-19T07:35:45.902715,OFF,°C,active,Sensitive
+e7e1f1bf-4aee-48d5-b40b-ddb8ae7b39cf,nurse_call_button,signal,signal_device,Bedside,2025-06-21T18:33:45.902757,22.31,°C,offline,Sensitive
+f403ac4c-035f-4def-aee9-344e5d010834,light_sensor,lighting,lighting_device,Office,2025-06-23T10:10:45.902795,ON,bpm,active,Non-sensitive
+17d872bb-c1a8-4734-b68e-137d7df5e42b,door_sensor,access_control,access_control_device,Operating Room,2025-06-21T08:47:45.902819,OFF,lux,offline,Sensitive
+a1ae8a0b-51d4-4591-9f0a-b55cf31346dc,vault_door_sensor,access_control,access_control_device,Vault,2025-06-21T13:13:45.902837,42.08,°C,idle,Sensitive
+1113f1d1-0778-4c90-ae1b-ebcdd6d478a4,atm_camera,video,video_device,ATM,2025-06-23T21:22:45.902851,19.12,%,active,Sensitive
+d7d12ecc-e77d-4191-bdbf-d51ac1a7abb9,RFID_patient_tracker,location_tracking,location_tracking_device,Ward,2025-06-18T02:43:45.902865,53.93,bpm,active,Sensitive
+6a9c6273-1337-41d8-add8-c8c51b600e46,air_quality_sensor,environmental,environmental_device,Lab,2025-06-18T07:00:45.902879,OFF,boolean,offline,Non-sensitive
+462cce6f-6be6-4ceb-90b5-a5255a934ded,motion_detector,motion,motion_device,Lobby,2025-06-20T15:30:45.902914,OFF,%,offline,Sensitive
+6f557d63-a322-447e-a47f-70c660345584,motion_detector,motion,motion_device,Lobby,2025-06-22T10:36:45.902931,OFF,boolean,offline,Sensitive
+51958c9c-0c4b-483d-a77a-5353c0520647,refrigerator_sensor,storage_monitor,storage_monitor_device,Pharmacy,2025-06-22T12:30:45.903095,ON,°C,active,Non-sensitive
+7ad13474-e297-491c-ada0-85d905b6873b,RFID_patient_tracker,location_tracking,location_tracking_device,Ward,2025-06-19T00:44:45.903232,14.3,bpm,idle,Sensitive
+5bc555fd-95da-4bad-b509-3076b9df0ca6,ventilator,respiratory,respiratory_device,ICU,2025-06-22T20:30:45.903311,69.22,%,idle,Sensitive
+4b6dd2e8-d888-4683-be34-b8795bd80511,motion_detector,motion,motion_device,Lobby,2025-06-21T00:36:45.903338,OFF,boolean,offline,Sensitive
+1366ff96-8ab8-449b-8147-8fe4df810e9f,humidity_sensor,environmental,environmental_device,Data Center,2025-06-24T10:03:45.903358,OFF,lux,idle,Non-sensitive
+82b3be0f-b1af-4220-a47b-209788f35e86,air_quality_sensor,environmental,environmental_device,Lab,2025-06-22T16:46:45.903394,ON,°C,idle,Non-sensitive
+809daacd-e124-476c-813f-09a704887a68,room_temp_sensor,temperature,temperature_device,Ward,2025-06-20T02:42:45.903424,OFF,°C,offline,Non-sensitive
+80512b3a-b938-4a0f-b3c9-7413cadd7af5,ventilator,respiratory,respiratory_device,ICU,2025-06-22T09:35:45.903466,16.84,boolean,idle,Sensitive
+7e3eddfb-71a2-4da5-ae76-995c842eadb3,infusion_pump,drug_delivery,drug_delivery_device,Patient Room,2025-06-24T10:26:45.903510,ON,lux,idle,Sensitive
+e22bdaba-edf8-416a-bca7-5438f4704127,RFID_patient_tracker,location_tracking,location_tracking_device,Ward,2025-06-21T11:59:45.903544,ON,kWh,active,Sensitive
+a322cbcc-254f-4202-b2ad-8c9288dfdb54,RFID_patient_tracker,location_tracking,location_tracking_device,Ward,2025-06-19T04:17:45.903575,OFF,°C,offline,Sensitive
+93e0f0cd-ec18-47fa-8215-67634cb67e8e,patient_monitor,biometric,biometric_device,ICU,2025-06-20T18:27:45.903601,90.62,kWh,idle,Sensitive
+3d730a3f-6761-4794-bd4f-e5d1e266ac2e,refrigerator_sensor,storage_monitor,storage_monitor_device,Pharmacy,2025-06-21T03:33:45.903629,OFF,°C,offline,Non-sensitive
+7e7f95b8-0f35-42c6-8f98-93ec353c2e22,refrigerator_sensor,storage_monitor,storage_monitor_device,Pharmacy,2025-06-23T15:58:45.903655,ON,kWh,active,Non-sensitive
+affbf01f-3658-4fee-9e9e-dea4f43c9b03,door_sensor,access_control,access_control_device,Operating Room,2025-06-21T10:47:45.903680,62.27,bpm,idle,Sensitive
+7e88dd63-9540-4f47-b46e-201af7745a85,light_sensor,lighting,lighting_device,Office,2025-06-22T20:06:45.903716,ON,lux,active,Non-sensitive
+9efc9e29-6f8a-4522-a1cc-6f674a6a380c,patient_monitor,biometric,biometric_device,ICU,2025-06-18T03:52:45.903851,ON,%,idle,Sensitive
+bd0f3b21-745b-458f-aff5-53e2bf46566a,temperature_sensor,temperature,temperature_device,Server Room,2025-06-19T22:20:45.903928,ON,%,offline,Non-sensitive
+06d7ab82-c475-4e18-8732-1e551dce6b9d,infusion_pump,drug_delivery,drug_delivery_device,Patient Room,2025-06-20T00:47:45.903955,OFF,%,active,Sensitive
+b310cd0b-341a-4683-8f42-702a6a51651b,refrigerator_sensor,storage_monitor,storage_monitor_device,Pharmacy,2025-06-17T22:19:45.903979,72.29,lux,active,Non-sensitive
+1e6e37b0-3873-496c-a25a-c5852608e168,energy_meter,power_monitor,power_monitor_device,Branch Office,2025-06-21T08:52:45.904002,ON,%,offline,Non-sensitive
+79e72a68-1264-4f21-8ea7-80f8d6b30ec3,cash_counter_sensor,weight,weight_device,Teller Counter,2025-06-18T16:18:45.904023,ON,kWh,idle,Sensitive
+c2e7a6ae-9b2b-4b47-a3d3-7b466dd8affc,nurse_call_button,signal,signal_device,Bedside,2025-06-19T21:57:45.904223,OFF,%,offline,Sensitive
+9971c802-33dc-4926-ac2b-a978bc38205e,motion_detector,motion,motion_device,Lobby,2025-06-18T22:38:45.904394,OFF,boolean,idle,Sensitive
+fb99fcfa-7473-45a5-9285-609dbf562cc6,atm_camera,video,video_device,ATM,2025-06-18T10:05:45.904466,ON,%,offline,Sensitive
+010057a2-5db6-4945-a2e8-9373ff9a6f02,energy_meter,power_monitor,power_monitor_device,Branch Office,2025-06-24T18:44:45.904531,OFF,%,active,Non-sensitive
+b11487e9-9992-4240-9060-d6c000b150c5,door_sensor,access_control,access_control_device,Operating Room,2025-06-20T20:03:45.904557,30.56,°C,idle,Sensitive
+c42a0757-e523-421a-8d3f-635966c83316,energy_meter,power_monitor,power_monitor_device,Branch Office,2025-06-21T22:06:45.904597,OFF,lux,idle,Non-sensitive
+15263a17-4e56-4e7a-9bcd-ef9a4ec02861,air_quality_sensor,environmental,environmental_device,Lab,2025-06-18T18:04:45.904635,83.59,boolean,offline,Non-sensitive
+4773d2d4-f471-4902-98d8-4f3f6c532e44,infusion_pump,drug_delivery,drug_delivery_device,Patient Room,2025-06-24T15:18:45.904683,41.35,boolean,active,Sensitive
+c610bfe0-9643-4a58-8f0e-f8dae553e75c,RFID_patient_tracker,location_tracking,location_tracking_device,Ward,2025-06-20T11:22:45.904720,ON,boolean,active,Sensitive
+28858c00-9189-4f81-877e-157813dee396,vault_door_sensor,access_control,access_control_device,Vault,2025-06-23T06:21:45.904761,ON,%,active,Sensitive
+fdf91939-359a-490f-a83a-201a814f8d11,air_quality_sensor,environmental,environmental_device,Lab,2025-06-21T08:08:45.904801,12.08,kWh,active,Non-sensitive
+ed41264f-4633-489e-a0a9-e8e272b7da35,light_sensor,lighting,lighting_device,Office,2025-06-18T19:55:45.904829,ON,kWh,active,Non-sensitive
+96ac87c0-380c-4158-8c6f-2a8fa25de946,infusion_pump,drug_delivery,drug_delivery_device,Patient Room,2025-06-22T19:34:45.904943,OFF,°C,offline,Sensitive
+d28dd06e-25cd-4c1a-9f4c-86cc96da2778,RFID_patient_tracker,location_tracking,location_tracking_device,Ward,2025-06-20T03:57:45.905028,OFF,bpm,active,Sensitive
+08b1ae59-e100-4c66-9fdf-3f32b835ec6e,air_quality_sensor,environmental,environmental_device,Lab,2025-06-20T13:54:45.905075,OFF,lux,idle,Non-sensitive
+0ffc844d-0058-4b61-b0ae-a0a330b72d9b,air_quality_sensor,environmental,environmental_device,Lab,2025-06-24T18:20:45.905092,96.61,°C,offline,Non-sensitive
+3310ea52-659e-48b2-85e2-47c89a3a2cb8,room_temp_sensor,temperature,temperature_device,Ward,2025-06-21T11:48:45.905110,46.41,°C,active,Non-sensitive
+6da5833f-edd0-4798-ad6c-1ca4773f5991,energy_meter,power_monitor,power_monitor_device,Branch Office,2025-06-21T03:15:45.905124,OFF,%,idle,Non-sensitive
+716af80c-5cf1-4502-aa55-b6675885b907,motion_detector,motion,motion_device,Lobby,2025-06-23T01:46:45.905148,OFF,kWh,idle,Sensitive
+7722cab7-3d83-4efc-9246-b2ccb11e547a,vault_door_sensor,access_control,access_control_device,Vault,2025-06-22T12:49:45.905184,97.82,%,active,Sensitive
+7a8ec4b5-7182-4f5d-bd86-7e18aa549710,air_quality_sensor,environmental,environmental_device,Lab,2025-06-22T00:03:45.905199,77.12,lux,active,Non-sensitive
+a0f181a6-813c-4915-bab3-76c77328c0b0,energy_meter,power_monitor,power_monitor_device,Branch Office,2025-06-18T17:44:45.905213,OFF,%,idle,Non-sensitive
+421041b7-223b-4e0e-82de-fbccd819133d,infusion_pump,drug_delivery,drug_delivery_device,Patient Room,2025-06-23T15:13:45.905228,OFF,lux,active,Sensitive
+3c1b7faf-6f6d-4805-8f26-32725bf298a7,energy_meter,power_monitor,power_monitor_device,Branch Office,2025-06-19T04:42:45.905249,OFF,bpm,offline,Non-sensitive
+3ecfaf4a-14e7-49b6-9dca-a4ad46fa6cfa,humidity_sensor,environmental,environmental_device,Data Center,2025-06-22T17:37:45.905384,ON,bpm,active,Non-sensitive
+b5c5d9e4-c1a4-4b05-a651-3ec9046f9148,room_temp_sensor,temperature,temperature_device,Ward,2025-06-24T01:42:45.905470,ON,%,idle,Non-sensitive
+49fb39bb-4e98-460b-8e85-17f8116a3497,energy_meter,power_monitor,power_monitor_device,Branch Office,2025-06-22T09:24:45.905517,13.44,lux,offline,Non-sensitive
+7e20417e-33ff-4669-8488-55f254075b40,ventilator,respiratory,respiratory_device,ICU,2025-06-23T12:56:45.905550,7.01,kWh,idle,Sensitive
+7f0baabf-81fe-4c63-98d9-5e73b6e29eda,infusion_pump,drug_delivery,drug_delivery_device,Patient Room,2025-06-21T06:12:45.905593,OFF,bpm,active,Sensitive
+10ba622f-367d-49cb-b400-656a91e8b593,air_quality_sensor,environmental,environmental_device,Lab,2025-06-17T23:53:45.905637,OFF,bpm,active,Non-sensitive
+384ddeb3-ae5d-4ef8-98b0-defe7a2fe590,light_sensor,lighting,lighting_device,Office,2025-06-24T14:25:45.905679,ON,lux,active,Non-sensitive
+2ce903ac-0c49-4b0a-b9a6-c4d6c670a352,temperature_sensor,temperature,temperature_device,Server Room,2025-06-18T20:54:45.905719,OFF,boolean,active,Non-sensitive
+cb6e0b2f-9ecd-42e0-a088-28861d811e2b,vault_door_sensor,access_control,access_control_device,Vault,2025-06-21T18:02:45.905760,ON,bpm,idle,Sensitive
+602c862a-c6a6-4672-9229-d19a600c51ce,room_temp_sensor,temperature,temperature_device,Ward,2025-06-18T16:16:45.905799,ON,boolean,offline,Non-sensitive
+34e11ed3-4eb6-41b8-8523-83b8abe7f9b2,motion_detector,motion,motion_device,Lobby,2025-06-21T02:37:45.905851,ON,boolean,offline,Sensitive
+1f088b49-4e44-4ffc-9d71-09429e2069cc,refrigerator_sensor,storage_monitor,storage_monitor_device,Pharmacy,2025-06-22T03:57:45.905892,ON,kWh,idle,Non-sensitive
+de0e21b4-6263-4347-9a9d-a1be4bf0f81c,cash_counter_sensor,weight,weight_device,Teller Counter,2025-06-19T02:04:45.905952,38.84,bpm,idle,Sensitive
+e7998a73-2a5c-4828-a47a-05e72ea8e61c,RFID_patient_tracker,location_tracking,location_tracking_device,Ward,2025-06-23T03:04:45.905993,39.38,%,active,Sensitive
+7e9404b2-cfb2-4f1e-9c27-0bac01c0fbde,humidity_sensor,environmental,environmental_device,Data Center,2025-06-19T05:32:45.906034,1.43,°C,idle,Non-sensitive
+cfc9bba1-bbc4-4563-aef9-f01de231cf4d,room_temp_sensor,temperature,temperature_device,Ward,2025-06-21T19:50:45.906076,48.85,kWh,offline,Non-sensitive
+6eb2f417-920e-42f3-8472-25349722d120,ECG_sensor,biometric,biometric_device,ER,2025-06-22T09:28:45.906117,OFF,lux,offline,Sensitive
+31b9316a-b150-48d9-9f5d-4b37241cb374,patient_monitor,biometric,biometric_device,ICU,2025-06-21T10:23:45.906156,ON,lux,idle,Sensitive
+ee7b3c92-a747-4865-8608-edef6ccce175,room_temp_sensor,temperature,temperature_device,Ward,2025-06-20T04:02:45.906208,ON,bpm,offline,Non-sensitive
+db138b84-a901-423c-80fe-b574b481b26a,cash_counter_sensor,weight,weight_device,Teller Counter,2025-06-22T12:32:45.906250,OFF,%,active,Sensitive
+8e2cf4e4-394e-42d3-a4a0-0e35354413c1,light_sensor,lighting,lighting_device,Office,2025-06-20T07:44:45.906300,36.68,kWh,idle,Non-sensitive
+c652db39-45d8-4ab0-9303-9346eacbcd9e,energy_meter,power_monitor,power_monitor_device,Branch Office,2025-06-24T15:38:45.906349,ON,boolean,offline,Non-sensitive
+b285fa2d-d77c-4d44-8921-2fd7c9f0c568,ventilator,respiratory,respiratory_device,ICU,2025-06-21T05:15:45.906404,OFF,boolean,offline,Sensitive
+9760af79-4948-44f5-80c8-a950457e487b,motion_detector,motion,motion_device,Lobby,2025-06-20T12:10:45.906429,8.26,lux,active,Sensitive
+acbec31a-e58c-48a4-bd96-737a2c03cb20,humidity_sensor,environmental,environmental_device,Data Center,2025-06-21T02:29:45.906456,OFF,boolean,active,Non-sensitive
+63e67c67-ae05-4594-a02b-6475f7510900,motion_detector,motion,motion_device,Lobby,2025-06-23T17:11:45.906492,ON,bpm,offline,Sensitive
+06f86e6c-46bc-4508-bbe1-c5c20405d26b,patient_monitor,biometric,biometric_device,ICU,2025-06-18T22:09:45.906528,ON,°C,offline,Sensitive
+730227c5-0bab-4865-8779-58962821e2df,humidity_sensor,environmental,environmental_device,Data Center,2025-06-23T10:15:45.906562,ON,bpm,active,Non-sensitive
+ba7bacb3-b478-46ea-a612-214fb548a401,vault_door_sensor,access_control,access_control_device,Vault,2025-06-20T06:06:45.906605,42.9,kWh,offline,Sensitive
+4e26b1d0-ee47-409e-bf0c-4aeca9b0909d,ventilator,respiratory,respiratory_device,ICU,2025-06-21T14:27:45.906628,95.26,%,offline,Sensitive
+26b43f76-ff5c-49f5-bbb3-5f75b3467022,light_sensor,lighting,lighting_device,Office,2025-06-22T16:15:45.906673,OFF,°C,active,Non-sensitive
+e5b394b8-a0f4-437e-9dd9-369b1da21281,cash_counter_sensor,weight,weight_device,Teller Counter,2025-06-23T22:22:45.906712,ON,°C,idle,Sensitive
+e2524823-d06c-4561-a857-0519fa1464fb,room_temp_sensor,temperature,temperature_device,Ward,2025-06-24T00:39:45.906740,65.46,%,idle,Non-sensitive
+a9cccec0-a05d-4143-9826-3b7f82b23956,biometric_access_reader,biometric,biometric_device,Entrance,2025-06-20T07:55:45.906765,86.78,kWh,idle,Sensitive
+7e4ef461-4bff-42dd-bf87-49843e928566,light_sensor,lighting,lighting_device,Office,2025-06-19T06:14:45.906788,OFF,%,active,Non-sensitive
+c4ace1ea-4483-446d-8f3c-b6c9b9111451,light_sensor,lighting,lighting_device,Office,2025-06-24T02:25:45.906824,OFF,boolean,idle,Non-sensitive
+fd010372-4c98-4126-9c4a-0eafa267d068,humidity_sensor,environmental,environmental_device,Data Center,2025-06-23T01:47:45.906856,ON,%,offline,Non-sensitive
+88abba48-67be-4b73-88a9-c030fe0c9340,ECG_sensor,biometric,biometric_device,ER,2025-06-24T19:58:45.906895,OFF,kWh,active,Sensitive
+bf199215-3ae5-4f89-8f78-bc0869be3ee7,vault_door_sensor,access_control,access_control_device,Vault,2025-06-23T22:06:45.906931,75.6,boolean,active,Sensitive
+9104b59a-f585-4f35-ab2f-7c2281e82ce9,temperature_sensor,temperature,temperature_device,Server Room,2025-06-20T18:40:45.906968,53.29,kWh,idle,Non-sensitive
+0151d8b1-7170-43d8-85fd-ac28cf935445,vault_door_sensor,access_control,access_control_device,Vault,2025-06-18T05:54:45.907009,OFF,kWh,idle,Sensitive
+5628d8e7-d3ae-4d25-801a-8a0f6fed9cb8,biometric_access_reader,biometric,biometric_device,Entrance,2025-06-18T20:56:45.907065,ON,%,active,Sensitive
+a83e07b4-80a9-450d-a408-e9d4eb5cc063,room_temp_sensor,temperature,temperature_device,Ward,2025-06-24T14:32:45.907108,OFF,°C,idle,Non-sensitive
+c4413a4e-d713-49bc-bedd-3dd5dc326749,ventilator,respiratory,respiratory_device,ICU,2025-06-18T23:53:45.907302,65.45,boolean,offline,Sensitive
+e8c1112b-93f8-4181-bbb3-6b6bc0f26c27,cash_counter_sensor,weight,weight_device,Teller Counter,2025-06-18T21:32:45.907354,48.51,bpm,active,Sensitive
+0734a779-a541-49e7-b6e3-09ce2fcfc059,cash_counter_sensor,weight,weight_device,Teller Counter,2025-06-18T16:39:45.907380,OFF,lux,active,Sensitive
+9ad7c5ab-a086-4ead-981c-66a1aaa8099c,refrigerator_sensor,storage_monitor,storage_monitor_device,Pharmacy,2025-06-20T16:48:45.907394,95.75,%,offline,Non-sensitive
+9ab65486-8d80-43f2-b835-ce2a178107ba,door_sensor,access_control,access_control_device,Operating Room,2025-06-23T14:40:45.907440,ON,boolean,idle,Sensitive
+61053d2c-d9a2-425e-87e1-695a5b446549,temperature_sensor,temperature,temperature_device,Server Room,2025-06-21T11:47:45.907482,59.54,%,offline,Non-sensitive
+5e323722-5e79-46ba-9d2d-f3906c7e6f4f,cash_counter_sensor,weight,weight_device,Teller Counter,2025-06-21T09:57:45.907532,ON,bpm,active,Sensitive
+b5e0d0c1-ccb8-441b-8a2b-6d55b613fd3f,nurse_call_button,signal,signal_device,Bedside,2025-06-18T13:45:45.907555,OFF,bpm,offline,Sensitive
+8fae5719-3dce-418d-bf38-464e1d1da3a6,patient_monitor,biometric,biometric_device,ICU,2025-06-18T12:42:45.907587,11.61,°C,offline,Sensitive
+30fccc21-b9a3-4996-9604-8ac31dc193a8,ventilator,respiratory,respiratory_device,ICU,2025-06-18T02:23:45.907601,OFF,lux,offline,Sensitive
+4555f6d6-0f77-4f3a-ad29-b684187a70f8,room_temp_sensor,temperature,temperature_device,Ward,2025-06-18T17:34:45.907614,OFF,lux,idle,Non-sensitive
+0bec201a-c66a-4f72-a4de-2a2b4346926d,RFID_patient_tracker,location_tracking,location_tracking_device,Ward,2025-06-18T06:41:45.907628,OFF,kWh,idle,Sensitive
+ef87dc3f-1e2c-4233-80e9-63864c65a39a,refrigerator_sensor,storage_monitor,storage_monitor_device,Pharmacy,2025-06-18T13:50:45.907641,ON,%,active,Non-sensitive
+3680a21a-c562-4b51-92c9-29d16c58e00a,energy_meter,power_monitor,power_monitor_device,Branch Office,2025-06-19T08:25:45.907664,OFF,kWh,offline,Non-sensitive
+2d2ccf7d-0988-42fa-8c42-eeb6874e4aee,patient_monitor,biometric,biometric_device,ICU,2025-06-24T18:18:45.907790,4.98,°C,idle,Sensitive
+a8c6b137-131b-4b33-b69e-91ea4423d194,patient_monitor,biometric,biometric_device,ICU,2025-06-23T13:45:45.907860,ON,lux,offline,Sensitive
+ad5b60c1-ae7f-4fee-a9d0-9550ea7234b8,infusion_pump,drug_delivery,drug_delivery_device,Patient Room,2025-06-23T00:03:45.907891,ON,°C,offline,Sensitive
+1bd1e867-5730-4bbc-bc32-c2f8b8762a52,patient_monitor,biometric,biometric_device,ICU,2025-06-21T11:40:45.907935,ON,kWh,idle,Sensitive
+b0499869-9ebb-4e81-8259-9009fd8ad8e4,motion_detector,motion,motion_device,Lobby,2025-06-22T05:52:45.907971,ON,%,active,Sensitive
+b3564aae-ea67-46c7-85c0-ca7a3184a378,refrigerator_sensor,storage_monitor,storage_monitor_device,Pharmacy,2025-06-22T00:21:45.908006,ON,bpm,active,Non-sensitive
+dcbee74e-8bf5-479e-a9e1-1d9e1c7555b4,atm_camera,video,video_device,ATM,2025-06-23T08:20:45.908033,ON,%,offline,Sensitive
+c73e0b09-71f2-48bb-baac-c44128a2146c,ECG_sensor,biometric,biometric_device,ER,2025-06-18T22:55:45.908064,OFF,lux,offline,Sensitive
+7432e6a9-2815-4535-a6a3-3de9d1cda986,patient_monitor,biometric,biometric_device,ICU,2025-06-20T00:44:45.908190,93.86,bpm,offline,Sensitive
+f42b7712-a704-4cae-8a54-e28d8982ab6c,motion_detector,motion,motion_device,Lobby,2025-06-21T18:22:45.908235,62.76,bpm,active,Sensitive
+0b6b4699-7651-43a9-9125-73f4d7c0f84b,nurse_call_button,signal,signal_device,Bedside,2025-06-22T00:10:45.908347,OFF,°C,active,Sensitive
+0fe7e007-a98b-4c48-9c75-e471a051d718,room_temp_sensor,temperature,temperature_device,Ward,2025-06-22T22:22:45.908429,OFF,%,active,Non-sensitive
+7c7ddecf-5020-4402-ad7c-b87f9c3399e3,door_sensor,access_control,access_control_device,Operating Room,2025-06-20T01:02:45.908475,21.49,lux,idle,Sensitive
+8b8f9a46-9592-4a36-b56a-2dd7a0818c38,cash_counter_sensor,weight,weight_device,Teller Counter,2025-06-20T08:17:45.908617,47.17,lux,offline,Sensitive
+21dfeffa-a8b8-4b63-be11-43d790e663df,nurse_call_button,signal,signal_device,Bedside,2025-06-21T12:10:45.908699,ON,°C,active,Sensitive
+5d605693-8720-42cc-9dbb-9c60085b0e8d,infusion_pump,drug_delivery,drug_delivery_device,Patient Room,2025-06-20T11:22:45.908736,41.35,°C,active,Sensitive
+2d46e509-272e-4590-ab41-5fb67e7b342a,RFID_patient_tracker,location_tracking,location_tracking_device,Ward,2025-06-19T00:53:45.908772,8.97,°C,idle,Sensitive
+751f186b-961a-4cf2-8bdf-5b7ff8489365,motion_detector,motion,motion_device,Lobby,2025-06-20T17:48:45.908845,OFF,°C,offline,Sensitive
+d3d47e72-d7e3-4848-9857-73afce615b90,motion_detector,motion,motion_device,Lobby,2025-06-22T21:03:45.908941,OFF,kWh,offline,Sensitive
+a8c04e88-d835-4d0d-886b-b262d36e1d42,ventilator,respiratory,respiratory_device,ICU,2025-06-20T11:17:45.909008,OFF,°C,offline,Sensitive
+2cac6c83-751f-4d26-a662-ef280a348cc5,RFID_patient_tracker,location_tracking,location_tracking_device,Ward,2025-06-19T13:49:45.909053,ON,bpm,offline,Sensitive
+ccb5d2dd-a8b5-45c0-b0a9-ab6a46fcfbfc,temperature_sensor,temperature,temperature_device,Server Room,2025-06-23T17:05:45.909078,OFF,bpm,offline,Non-sensitive
+189d2073-1266-40bd-8249-005f77d3fb0b,motion_detector,motion,motion_device,Lobby,2025-06-23T17:56:45.909120,ON,boolean,offline,Sensitive
+3f224022-3699-4920-ac22-5bd1592b82cb,door_sensor,access_control,access_control_device,Operating Room,2025-06-19T06:23:45.909145,90.55,lux,idle,Sensitive
+c52a7979-0374-4ad6-846e-e162e75b2e00,infusion_pump,drug_delivery,drug_delivery_device,Patient Room,2025-06-23T22:53:45.909185,ON,bpm,offline,Sensitive
+a43da739-00f2-47d2-895d-4c31d3edc941,temperature_sensor,temperature,temperature_device,Server Room,2025-06-24T06:07:45.909206,OFF,%,idle,Non-sensitive
+bb2b2946-2fe5-4481-98a6-bfa8518db6ea,infusion_pump,drug_delivery,drug_delivery_device,Patient Room,2025-06-17T23:39:45.909219,ON,%,idle,Sensitive
+10a51b5b-4204-4113-a06a-e188ee10a58d,motion_detector,motion,motion_device,Lobby,2025-06-21T15:57:45.909232,OFF,bpm,idle,Sensitive
+66ba42a6-47d0-4886-8f68-cffea578561d,energy_meter,power_monitor,power_monitor_device,Branch Office,2025-06-22T23:22:45.909245,OFF,boolean,active,Non-sensitive
+347df639-db56-4d8e-b974-a1aafd4843d4,motion_detector,motion,motion_device,Lobby,2025-06-23T04:26:45.909258,OFF,bpm,offline,Sensitive
+7b61b39b-eb4b-457c-880e-c28ad9560f1d,patient_monitor,biometric,biometric_device,ICU,2025-06-20T12:47:45.909302,ON,boolean,idle,Sensitive
+959d3449-7135-4725-b874-03423049b68f,infusion_pump,drug_delivery,drug_delivery_device,Patient Room,2025-06-23T08:47:45.909339,80.41,lux,active,Sensitive
+e9e48c8d-d310-4669-8913-6342f58f717c,biometric_access_reader,biometric,biometric_device,Entrance,2025-06-18T15:24:45.909356,ON,bpm,idle,Sensitive
+9399cfce-1658-4d6d-8af8-e68242361c0b,vault_door_sensor,access_control,access_control_device,Vault,2025-06-22T09:22:45.909369,ON,lux,idle,Sensitive
+a71924bb-01a3-4357-90cb-ab9ab0a45584,infusion_pump,drug_delivery,drug_delivery_device,Patient Room,2025-06-18T09:47:45.909382,20.39,lux,idle,Sensitive
+5da72ffa-1ea5-46e5-ae00-f7c0661ae450,motion_detector,motion,motion_device,Lobby,2025-06-18T20:50:45.909407,ON,kWh,active,Sensitive
+1dcc7d26-bb9d-461d-85ec-66c32b215bbd,room_temp_sensor,temperature,temperature_device,Ward,2025-06-18T10:40:45.909423,ON,%,offline,Non-sensitive
+f8eb95f0-92be-4566-8285-501edadd89d5,RFID_patient_tracker,location_tracking,location_tracking_device,Ward,2025-06-24T09:36:45.909437,95.96,bpm,offline,Sensitive
+2981396a-06a0-4826-bb15-2801265ee78a,biometric_access_reader,biometric,biometric_device,Entrance,2025-06-23T19:28:45.909454,0.05,lux,offline,Sensitive
+95e3f85b-92ee-495d-81a1-fc6491850353,room_temp_sensor,temperature,temperature_device,Ward,2025-06-24T03:58:45.909480,76.62,bpm,offline,Non-sensitive
+816dc42e-413e-4e23-9e5a-44ebed148b46,ventilator,respiratory,respiratory_device,ICU,2025-06-21T07:50:45.909495,ON,°C,idle,Sensitive
+625efc14-440e-4a1f-9dc6-af8ba0602c09,temperature_sensor,temperature,temperature_device,Server Room,2025-06-20T17:40:45.909521,OFF,bpm,active,Non-sensitive
+8ffee107-f4b0-4a6e-a0d0-25bf18a74e0a,atm_camera,video,video_device,ATM,2025-06-17T22:31:45.909550,OFF,boolean,offline,Sensitive
+bf91a110-d467-497e-b0f9-9a040445d6ba,air_quality_sensor,environmental,environmental_device,Lab,2025-06-24T14:30:45.909607,OFF,%,active,Non-sensitive
+9bc23a3c-2933-4e8c-beb5-dfc72113e561,room_temp_sensor,temperature,temperature_device,Ward,2025-06-22T14:44:45.909735,ON,boolean,offline,Non-sensitive
+de74a0f2-b6b1-4a41-9583-f54e18d235ff,vault_door_sensor,access_control,access_control_device,Vault,2025-06-24T19:35:45.909805,ON,%,offline,Sensitive
+02a8482e-579a-4ad2-ad53-6bf00f425b2a,motion_detector,motion,motion_device,Lobby,2025-06-23T11:16:45.909839,ON,lux,offline,Sensitive
+e232645d-9ede-4db0-804e-141038c199ea,vault_door_sensor,access_control,access_control_device,Vault,2025-06-21T19:09:45.909897,ON,lux,idle,Sensitive
+9e4f5f48-57bf-4c41-9666-2ec49ad9ab2d,vault_door_sensor,access_control,access_control_device,Vault,2025-06-20T11:30:45.909922,47.09,°C,idle,Sensitive
+84d2afae-bdbb-4902-9840-4d5e15a21c09,air_quality_sensor,environmental,environmental_device,Lab,2025-06-19T22:40:45.909947,ON,bpm,offline,Non-sensitive
+1f47b35c-111b-4c29-baa7-a450948039af,ventilator,respiratory,respiratory_device,ICU,2025-06-20T17:28:45.909994,ON,%,idle,Sensitive
+68c6476b-ba5d-43ae-9d94-b95190dd8267,patient_monitor,biometric,biometric_device,ICU,2025-06-22T22:31:45.910017,57.52,°C,active,Sensitive
+49d461b5-6dc7-414c-83a5-690577d2bde7,door_sensor,access_control,access_control_device,Operating Room,2025-06-23T12:14:45.910047,OFF,%,active,Sensitive
+ed96442f-ac23-4e05-b6fd-7a636753f147,ECG_sensor,biometric,biometric_device,ER,2025-06-21T20:38:45.910081,ON,bpm,offline,Sensitive
+0a7f5b00-3645-489d-a6f0-a68487f9446c,energy_meter,power_monitor,power_monitor_device,Branch Office,2025-06-22T23:46:45.910120,OFF,%,offline,Non-sensitive
+2b2bb64d-c5ef-497e-b1f9-b85e3267323f,light_sensor,lighting,lighting_device,Office,2025-06-18T16:45:45.910146,17.15,kWh,idle,Non-sensitive
+07de954d-b2ac-4cc2-b5cf-86fe185251aa,motion_detector,motion,motion_device,Lobby,2025-06-22T21:20:45.910162,OFF,°C,active,Sensitive
+e0d3c045-96bd-475c-99c6-8af50318a502,ventilator,respiratory,respiratory_device,ICU,2025-06-19T22:52:45.910177,65.32,%,active,Sensitive
+d5bc2286-ad88-4676-8b21-06db3a75d9d3,door_sensor,access_control,access_control_device,Operating Room,2025-06-22T07:31:45.910223,OFF,lux,idle,Sensitive
+507eae01-34f7-4179-a9a1-da7ecbd07bbd,light_sensor,lighting,lighting_device,Office,2025-06-19T13:17:45.910259,OFF,lux,offline,Non-sensitive
+c7d38195-c363-46bb-a298-4ccbcfd2c418,biometric_access_reader,biometric,biometric_device,Entrance,2025-06-23T04:02:45.910300,20.49,bpm,idle,Sensitive
+70691fe4-2c5c-42db-b63a-446cdcaba6f8,biometric_access_reader,biometric,biometric_device,Entrance,2025-06-20T16:54:45.910318,OFF,boolean,active,Sensitive
+45702cdf-176d-44fd-85be-42096f4e6767,temperature_sensor,temperature,temperature_device,Server Room,2025-06-21T04:38:45.910342,ON,kWh,idle,Non-sensitive
+074d29e2-27b6-4d65-911c-f882bed8162a,infusion_pump,drug_delivery,drug_delivery_device,Patient Room,2025-06-21T04:07:45.910377,70.21,°C,active,Sensitive
+3a6af93b-8000-4f45-ad73-fcd75baf77bd,door_sensor,access_control,access_control_device,Operating Room,2025-06-18T03:31:45.910416,OFF,lux,offline,Sensitive
+47d3405e-d659-429c-9fd1-ec6f39870835,room_temp_sensor,temperature,temperature_device,Ward,2025-06-20T09:20:45.910437,OFF,boolean,offline,Non-sensitive
+4db28891-2a3d-49ac-a39a-dc352da352e9,vault_door_sensor,access_control,access_control_device,Vault,2025-06-23T17:38:45.910462,OFF,boolean,active,Sensitive
+5679153b-3c18-4c2d-b6b4-fbf146e2ba2f,atm_camera,video,video_device,ATM,2025-06-20T15:58:45.910486,OFF,bpm,active,Sensitive
+a47bb458-c3e1-492d-8a9a-af61162ae46d,humidity_sensor,environmental,environmental_device,Data Center,2025-06-20T15:59:45.910506,ON,%,offline,Non-sensitive
+cec44373-9c93-4ee0-b317-58844d300127,patient_monitor,biometric,biometric_device,ICU,2025-06-24T11:15:45.910527,ON,kWh,idle,Sensitive
+657a2f52-8fe8-4c4e-a881-3f7a77226c7d,energy_meter,power_monitor,power_monitor_device,Branch Office,2025-06-22T03:39:45.910571,OFF,kWh,active,Non-sensitive
+c4061d2b-3a8f-47ea-8c0b-f5cc872b162e,refrigerator_sensor,storage_monitor,storage_monitor_device,Pharmacy,2025-06-21T03:49:45.910647,ON,%,idle,Non-sensitive
+ec9fdf4f-d189-4594-837b-964934ec96b2,vault_door_sensor,access_control,access_control_device,Vault,2025-06-23T06:24:45.910681,ON,%,active,Sensitive
+6d5e0ec6-cc98-44e8-a975-41c6e9f6a448,room_temp_sensor,temperature,temperature_device,Ward,2025-06-23T14:05:45.910801,36.22,kWh,idle,Non-sensitive
+9cc300e9-84ab-4a5f-9353-0fd973e68e39,ECG_sensor,biometric,biometric_device,ER,2025-06-22T10:26:45.910880,ON,lux,active,Sensitive
+41782015-0124-4ef6-865b-81fdca91f388,RFID_patient_tracker,location_tracking,location_tracking_device,Ward,2025-06-20T19:22:45.910907,OFF,°C,idle,Sensitive
+ef099f87-340d-4449-9892-c0507fcd1adc,RFID_patient_tracker,location_tracking,location_tracking_device,Ward,2025-06-24T07:21:45.910956,OFF,lux,active,Sensitive
+21ab8f31-332f-45f1-9463-f2d085684b88,door_sensor,access_control,access_control_device,Operating Room,2025-06-21T17:11:45.910984,OFF,boolean,active,Sensitive
+04432a37-7449-40a4-9343-7da5d8a49764,nurse_call_button,signal,signal_device,Bedside,2025-06-19T21:10:45.911503,17.26,bpm,offline,Sensitive
+ff35a961-0ab4-46a3-b9d3-e22aad49f409,infusion_pump,drug_delivery,drug_delivery_device,Patient Room,2025-06-21T11:47:45.911558,ON,lux,idle,Sensitive
+6e1c4b1c-8329-4200-898f-4edf8b32432d,biometric_access_reader,biometric,biometric_device,Entrance,2025-06-24T07:52:45.911580,ON,lux,active,Sensitive
