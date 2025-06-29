@@ -12,6 +12,7 @@ class IoTInput(BaseModel):
     sensor_type: str
     device_type: str
     location: str
+    value: str
 
 # Initialize FastAPI app
 app = FastAPI()

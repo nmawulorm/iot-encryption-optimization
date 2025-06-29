@@ -68,6 +68,3 @@ Below is a structured outline of the steps we will follow to build, train, and d
 
 * Start the service (e.g., with `uvicorn`) on boot or via `systemd`
 
----
-
-Would you like me to begin with **Phase 1: Model Development** now?
