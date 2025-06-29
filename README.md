@@ -68,3 +68,6 @@ Below is a structured outline of the steps we will follow to build, train, and d
 
 * Start the service (e.g., with `uvicorn`) on boot or via `systemd`
 
+```shell
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
