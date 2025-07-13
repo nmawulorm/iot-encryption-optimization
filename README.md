@@ -30,7 +30,7 @@ Below is a structured outline of the steps we will follow to build, train, and d
 * Save trained model pipeline using `joblib` for deployment
 
 ---
-
+z
 ### **🚀 Phase 2: REST API Deployment (on Middleware)**
 
 #### 5. **Create REST API with FastAPI**
@@ -42,7 +42,8 @@ Below is a structured outline of the steps we will follow to build, train, and d
     "sensor_name": "...",
     "sensor_type": "...",
     "device_type": "...",
-    "location": "..."
+    "location": "...",
+    "value": "..."
   }
   ```
 * Load the serialized model and return prediction: `sensitive` or `non-sensitive`
