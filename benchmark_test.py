@@ -1,4 +1,5 @@
 import string
+import sys
 import time
 import requests
 import random
@@ -20,23 +21,39 @@ def generate_large_value(size_kb: int) -> str:
     return ''.join(random.choices(chars, k=size_kb * 1024))
 
 
-def generate_payload(value_kb=2000):  # 2 MB per payload
+# Fixed payloads
+def get_sensitive_payload(value_kb:int):
     return {
-        "sensor_name": random.choice(sensor_names),
-        "sensor_type": random.choice(sensor_types),
-        "device_type": random.choice(device_types),
-        "location": random.choice(locations),
+        "sensor_name": "door_camera",  # Known to classify as sensitive
+        "sensor_type": "video",
+        "device_type": "camera",
+        "location": "front_door",
+        "value": generate_large_value(value_kb)
+    }
+
+def get_nonsensitive_payload(value_kb):
+    return {
+        "sensor_name": "door_sensor",  # Known to classify as non-sensitive
+        "sensor_type": "access_control",
+        "device_type": "access_control_device",
+        "location": "Operating Room",
         "value": generate_large_value(value_kb)
     }
 
 
-def run_test(request_count: int, url: str):
+# Run test
+def run_test(request_count: int, url: str, size:int):
     start = time.perf_counter()
     total_sensitive = 0
     total_non_sensitive = 0
 
     for i in range(request_count):
-        payload = generate_payload()
+        # Alternate sensitive and non-sensitive data
+        if i % 2 == 0:
+            payload = get_sensitive_payload(size)
+        else:
+            payload = get_nonsensitive_payload(size)
+
         r = requests.post(url, json=payload)
 
         if r.status_code != 200:
@@ -49,18 +66,11 @@ def run_test(request_count: int, url: str):
             print(f"Failed to parse response for request {i + 1}: {e}")
             continue
 
-        # Count sensitive based on presence of IV
         if isinstance(response_data, dict):
             if 'iv' in response_data:
                 total_sensitive += 1
             else:
                 total_non_sensitive += 1
-        elif isinstance(response_data, list):
-            for item in response_data:
-                if isinstance(item, dict) and 'iv' in item:
-                    total_sensitive += 1
-                else:
-                    total_non_sensitive += 1
 
     duration = time.perf_counter() - start
     return duration, total_sensitive
@@ -75,7 +85,9 @@ def print_results_table(results):
 
 
 if __name__ == "__main__":
-    print(f"\n🔁 Testing with payloads (approx. 2MB each)")
+    size = 7000
+
+    print(f"\n🔁 Testing with payloads (approx. {size/1000}MB each)")
     print("\n{:<10} {:<25} {:<25} {:<25}".format(
         "N", "Classified", "Unclassified", "Classified as sensitive"
     ))
@@ -84,10 +96,10 @@ if __name__ == "__main__":
     for N in range(10, 101, 10):
 
         # Selective classification + conditional encryption
-        classified_time, num_sensitive = run_test(N, URL)
+        classified_time, num_sensitive = run_test(N, URL, size)
 
         # Unselective encryption
-        unclassified_time, _ = run_test(N, URL_ALL)
+        unclassified_time, _ = run_test(N, URL_ALL, size)
 
         # Print result row
         print("{:<10} {:<25} {:<25} {:<25}".format(
