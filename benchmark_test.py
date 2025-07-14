@@ -13,15 +13,24 @@ device_types = ["camera", "sensor", "bulb", "plug"]
 locations = ["kitchen", "living_room", "garage", "bedroom"]
 value = "test_value_123"
 
+def generate_large_value(size_kb: int) -> str:
+    """
+    Generate a random ASCII string of specified size in kilobytes (KB).
+    """
+    chars = string.ascii_letters + string.digits
+    return ''.join(random.choices(chars, k=size_kb * 1024))
+
+
 # Prepare dataset
-def generate_payload():
+def generate_payload(value_kb=50000):  # e.g., 1000 KB = 1 MB
     return {
         "sensor_name": random.choice(sensor_names),
         "sensor_type": random.choice(sensor_types),
         "device_type": random.choice(device_types),
         "location": random.choice(locations),
-        "value": value
+        "value": generate_large_value(value_kb)
     }
+
 
 # Run test
 def run_test(request_count: int, url:string):
@@ -35,7 +44,7 @@ def run_test(request_count: int, url:string):
     return duration
 
 if __name__ == "__main__":
-    N = 500  # Number of test requests
+    N = 4  # Number of test requests
 
     print(f"🔁 Sending {N} classification-based (selective encryption) requests...")
     duration = run_test(N, URL)
