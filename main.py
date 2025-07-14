@@ -124,3 +124,28 @@ def predict_sensitivity(data: IoTInput):
             "prediction": prediction,
             "value": data.value
         }
+
+@app.post("/predict_all")
+def predict_all_encrypt(data: IoTInput):
+    global aes_key
+
+    if aes_key is None:
+        if os.path.exists(aes_key_file):
+            with open(aes_key_file, "rb") as f:
+                aes_key = f.read()
+        else:
+            raise HTTPException(status_code=400, detail="AES key not initialized")
+
+    iv = os.urandom(16)
+    cipher = Cipher(algorithms.AES(aes_key), modes.CBC(iv), backend=default_backend())
+    encryptor = cipher.encryptor()
+
+    pad_len = 16 - len(data.value.encode()) % 16
+    padded_value = data.value.encode() + bytes([pad_len] * pad_len)
+    ciphertext = encryptor.update(padded_value) + encryptor.finalize()
+
+    return {
+        "prediction": "sensitive",  # Simulated
+        "iv": base64.b64encode(iv).decode(),
+        "value": base64.b64encode(ciphertext).decode()
+    }
