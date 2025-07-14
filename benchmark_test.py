@@ -11,27 +11,16 @@ sensor_names = ["humidity_sensor", "room_temp_sensor", "light_bulb", "smart_plug
 sensor_types = ["environmental", "temperature", "light", "power"]
 device_types = ["environmental_device", "temperature_device", "bulb", "plug"]
 locations = ["Data Center", "Server Room", "garage", "bedroom"]
-value = "test_value_123"
 
-
-#
-# # Test data pool
-# sensor_names = ["door_camera", "temperature_sensor", "light_bulb", "smart_plug"]
-# sensor_types = ["video", "temperature", "light", "power"]
-# device_types = ["camera", "sensor", "bulb", "plug"]
-# locations = ["kitchen", "living_room", "garage", "bedroom"]
-# value = "test_value_123"
+# Store results
+results = []
 
 def generate_large_value(size_kb: int) -> str:
-    """
-    Generate a random ASCII string of specified size in kilobytes (KB).
-    """
     chars = string.ascii_letters + string.digits
     return ''.join(random.choices(chars, k=size_kb * 1024))
 
 
-# Prepare dataset
-def generate_payload(value_kb=200000):  # e.g., 1000 KB = 1 MB
+def generate_payload(value_kb=2000):  # 2 MB per payload
     return {
         "sensor_name": random.choice(sensor_names),
         "sensor_type": random.choice(sensor_types),
@@ -41,7 +30,6 @@ def generate_payload(value_kb=200000):  # e.g., 1000 KB = 1 MB
     }
 
 
-# Run test
 def run_test(request_count: int, url: str):
     start = time.perf_counter()
     total_sensitive = 0
@@ -52,16 +40,16 @@ def run_test(request_count: int, url: str):
         r = requests.post(url, json=payload)
 
         if r.status_code != 200:
-            print(f"Request {i+1} failed:", r.text)
+            print(f"Request {i + 1} failed:", r.text)
             continue
 
         try:
             response_data = r.json()
         except Exception as e:
-            print(f"Failed to parse response for request {i+1}: {e}")
+            print(f"Failed to parse response for request {i + 1}: {e}")
             continue
 
-        # Count based on presence of 'iv' field
+        # Count sensitive based on presence of IV
         if isinstance(response_data, dict):
             if 'iv' in response_data:
                 total_sensitive += 1
@@ -75,17 +63,37 @@ def run_test(request_count: int, url: str):
                     total_non_sensitive += 1
 
     duration = time.perf_counter() - start
-    print(f"🔐 Sensitive fields: {total_sensitive}")
-    print(f"🔓 Non-sensitive fields: {total_non_sensitive}")
-    return duration
+    return duration, total_sensitive
+
+
+def print_results_table(results):
+    print("\n{:<10} {:<25} {:<25} {:<25}".format(
+        "N", "Classified", "Unclassified", "Classified as sensitive"
+    ))
+    for row in results:
+        print("{:<10} {:<25} {:<25} {:<25}".format(*row))
+
 
 if __name__ == "__main__":
-    N = 4  # Number of test requests
+    print(f"\n🔁 Testing with payloads (approx. 2MB each)")
+    print("\n{:<10} {:<25} {:<25} {:<25}".format(
+        "N", "Classified", "Unclassified", "Classified as sensitive"
+    ))
 
-    print(f"🔁 Sending {N} classification-based (selective encryption) requests...")
-    duration = run_test(N, URL)
-    print(f"✅ Total time (selective encryption): {duration:.4f} seconds\n-------------------\n\n")
 
-    print(f"🔁 Sending {N} non-classification-based (unselective encryption) requests...")
-    duration = run_test(N, URL_ALL)
-    print(f"✅ Total time (unselective encryption): {duration:.4f} seconds")
+    for N in range(10, 101, 10):
+
+        # Selective classification + conditional encryption
+        classified_time, num_sensitive = run_test(N, URL)
+
+        # Unselective encryption
+        unclassified_time, _ = run_test(N, URL_ALL)
+
+        # Print result row
+        print("{:<10} {:<25} {:<25} {:<25}".format(
+            N,
+            f"{classified_time:.4f}s",
+            f"{unclassified_time:.4f}s",
+            num_sensitive
+        ))
+
