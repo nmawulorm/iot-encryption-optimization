@@ -114,12 +114,15 @@ def predict_sensitivity(data: IoTInput):
         padded_value = data.value.encode() + bytes([pad_len] * pad_len)
         ciphertext = encryptor.update(padded_value) + encryptor.finalize()
 
+        print(prediction)
+
         return {
             "prediction": prediction,
             "iv": base64.b64encode(iv).decode(),
             "value": base64.b64encode(ciphertext).decode()
         }
     else:
+        print(prediction)
         return {
             "prediction": prediction,
             "value": data.value
