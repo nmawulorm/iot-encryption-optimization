@@ -88,9 +88,10 @@ if __name__ == "__main__":
     size = 7000
 
     print(f"\n🔁 Testing with payloads (approx. {size/1000}MB each)")
-    print("\n{:<10} {:<25} {:<25} {:<25}".format(
-        "N", "Classified", "Unclassified", "Classified as sensitive"
+    print("\n{:<10} {:<25} {:<25} {:<25} {:<25}".format(
+        "N", "Classified", "Unclassified", "Difference", "Classified as sensitive",
     ))
+    print("----------------------------------------------------------------------------------------------------------------------")
 
 
     for N in range(10, 101, 10):
@@ -101,11 +102,14 @@ if __name__ == "__main__":
         # Unselective encryption
         unclassified_time, _ = run_test(N, URL_ALL, size)
 
+        difference =  unclassified_time - classified_time
+
         # Print result row
-        print("{:<10} {:<25} {:<25} {:<25}".format(
+        print("{:<10} {:<25} {:<25} {:<25} {:<25}".format(
             N,
             f"{classified_time:.4f}s",
             f"{unclassified_time:.4f}s",
+            f"{difference:.4f}s",
             num_sensitive
         ))
 
